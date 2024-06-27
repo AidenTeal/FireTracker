@@ -1,0 +1,141 @@
+body {
+    font-family: 'Helvetica', 'Arial', 'sans-serif';
+    /*background-color: #201f1d;*/
+    background-color:#363130;
+    color: whitesmoke;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    margin-left: 15%;
+}
+
+.fireTrackerLogo {
+    width: 350px;
+    height: 196.874975px;
+    margin: 0px;
+}
+
+.fireGreeting {
+    font-size: 26px;
+}
+
+.mapAndSearch {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 15%;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 3px;
+}
+
+.fireInput {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin-bottom: 3px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Optional - if you want to remove the default margin */
+}
+
+.fireInput::placeholder {
+    color: white;
+}
+
+.inputCircle {
+    margin-bottom: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.inputCircle p {
+    margin: 0; /* Resetting margin for the paragraph */
+    font-size: 16px;
+}
+
+.searchButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border-width: 1px;
+    border-color:#de602a;
+    cursor: pointer; 
+}
+
+.searchButton:hover {
+    background-color: #de602a;
+}
+
+.searchIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.map {
+    position: relative;
+    width: 50%;
+    height: 600px;
+    margin-bottom: 45px;
+    border-width: 5px;
+    border-color: #de602a;
+}
+
+.fireCountBadge {
+    position: relative;
+    bottom: 60px;
+    right: 70px;
+    background-color: #de602a; /* Example background color */
+    color: white;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.fireCountBadge p {
+    display: inline-block; /* Ensure it only takes up the necessary width */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+    font-size: 14px; /* Adjust font size as per your requirement */
+    font-weight: bold;
+}
+
+.fireGif {
+    width: 100%; /* Adjust width as needed */
+    max-width: 566.09px; /* Limit maximum width if necessary */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (max-width: 1300px) {
+    .mapAndSearch {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}

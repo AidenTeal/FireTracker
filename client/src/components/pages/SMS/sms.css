@@ -1,0 +1,7 @@
+button :hover {
+    background-color: #3d3736;
+}
+
+input:focus {
+    outline: none;
+}
